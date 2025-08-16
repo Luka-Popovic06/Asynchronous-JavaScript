@@ -10,3 +10,33 @@ console.log(
 );
 console.log('7. Bake for 20-25 minutes,then let cool completely.');
 console.log('8. slice, serve & enjoy!');
+
+/*isti princip samo sto se ne prikazuje redosledom kojim smo napisali
+prvo se prikaze 8. 1. 3. itd. 
+*/
+setTimeout(() => {
+  console.log('1. Preheat the oven to 350°F (180°C).');
+}, 1000);
+setTimeout(() => {
+  console.log('2. Chop half the chocolate into chunks & melt in microwave.');
+}, 2000);
+setTimeout(() => {
+  console.log('3. Mix butter & sugar.');
+}, 1500);
+setTimeout(() => {
+  console.log('4. Beat in the eggs and vanilla for 1-2 minutes.');
+}, 3000);
+setTimeout(() => {
+  console.log('5. the melted chocolate.');
+}, 4000);
+setTimeout(() => {
+  console.log(
+    '6. Fold in the other half of chocolate chunks, then transfer the batter to baking dish.'
+  );
+}, 3500);
+setTimeout(() => {
+  console.log('7. Bake for 20-25 minutes,then let cool completely.');
+}, 1800);
+setTimeout(() => {
+  console.log('8. slice, serve & enjoy!');
+}, 500);
