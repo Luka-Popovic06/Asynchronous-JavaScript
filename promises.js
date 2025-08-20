@@ -20,6 +20,9 @@ const promise = new Promise((resolve, reject) => {
   });
 });
 console.log(promise);*/
+
+/*
+//2
 const promise = new Promise((resolve, reject) => {
   resolve('Well Done! Promise One is Resolve');
 });
@@ -37,6 +40,26 @@ promise
   .then(value => {
     console.log(value);
     return promiseThree;
+  })
+  .catch(error => {
+    console.log(error);
+  });*/
+
+//3.Promise.all([])
+const promiseOne = new Promise((resolve, reject) => {
+  setTimeout(() => {
+    resolve('Promise One Resolved!');
+  }, 2000);
+});
+
+const promiseTwo = new Promise((resolve, reject) => {
+  setTimeout(() => {
+    reject('Promise Two Rejected!');
+  }, 1500);
+});
+Promise.all([promiseOne, promiseTwo])
+  .then(data => {
+    console.log(data[0], data[1]);
   })
   .catch(error => {
     console.log(error);
